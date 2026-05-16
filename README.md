@@ -51,14 +51,16 @@ By automating data capture loops and eliminating clinic telephone tag, the opera
 
 ## 📁 Repository Structure
 ```text
-├── sql/
-│   ├── schema.sql               # Database definition and index optimizations
-│   ├── core_metrics.sql         # Aggregations for drug classes & approval rates
-│   └── revenue_leak_audit.sql   # Calculations for financial loss parameters
-├── visuals/
-│   ├── tableau_workbook.twbx    # Interactive analytics dashboard workbook
-│   └── metrics_snapshot.png     # Exported dashboard preview
+├── notebooks/
+│   ├── 01_data_generation.ipynb     # Python scripting for baseline synthetic claims data
+│   └── 02_sql_analysis.ipynb        # Core SQL metrics and advanced revenue leak auditing
 ├── data/
+│   ├── raw_pharmacy_claims_10k.csv          # Raw generated synthetic claims data baseline
+│   ├── high_denial_drugs_summary.csv        # Extracted metrics for specialty drug exceptions
 │   └── PA_Operational_Executive_Report.xlsx # Professional structured Excel performance audit
-└── presentation/
-    └── PriorAuth-Ops Clinical Claims Intelligence System.pptx  # Executive consulting presentation
+|   └── priorauth_ops.db                     # Local SQLite relational database storing claims tables
+├── visuals/
+│   └── Prior Auth Op Dashboard.twb # Interactive Tableau analytics dashboard
+├── presentation/
+│   └── PriorAuth-Ops Clinical Claims Intelligence System.pptx # Executive consulting presentation
+└── README.md                        # Main landing documentation
