@@ -1,0 +1,1142 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='raw_pharmacy_claims_10k' inline='true' name='federated.1d00y2p1mb7ag815fcwf901dhalf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='raw_pharmacy_claims_10k' name='textscan.176bqy70ypp0hj0zjj68e0uh31xk'>
+            <connection class='textscan' directory='/Users/andresmancillas/Documents/PriorAuth_Ops_Project' filename='raw_pharmacy_claims_10k.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.176bqy70ypp0hj0zjj68e0uh31xk' name='raw_pharmacy_claims_10k.csv' table='[raw_pharmacy_claims_10k#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Claim_ID' ordinal='0' />
+            <column datatype='string' name='Drug_Name' ordinal='1' />
+            <column datatype='string' name='Drug_Class' ordinal='2' />
+            <column datatype='integer' name='Rejection_Code' ordinal='3' />
+            <column datatype='datetime' name='Submission_Date' ordinal='4' />
+            <column datatype='datetime' name='Resolution_Date' ordinal='5' />
+            <column datatype='string' name='Status' ordinal='6' />
+            <column datatype='string' name='Denial_Reason' ordinal='7' />
+            <column datatype='real' name='Patient_Out_of_Pocket_Cost' ordinal='8' />
+            <column datatype='real' name='Days_to_Resolution' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Claim_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Claim_ID]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Claim_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drug_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Drug_Name]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Drug_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drug_Class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Drug_Class]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Drug_Class</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rejection_Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rejection_Code]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Rejection_Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Submission_Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Submission_Date]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Submission_Date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resolution_Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Resolution_Date]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Resolution_Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Denial_Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Denial_Reason]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Denial_Reason</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Out_of_Pocket_Cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Patient_Out_of_Pocket_Cost]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Patient_Out_of_Pocket_Cost</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days_to_Resolution</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Days_to_Resolution]</local-name>
+            <parent-name>[raw_pharmacy_claims_10k.csv]</parent-name>
+            <remote-alias>Days_to_Resolution</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Denial Rate %' datatype='real' default-format='p0.00%' name='[Calculation_4290433894957056]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IIF([Status] = &apos;Denied&apos;, [Claim_ID], NULL)) / COUNT([Claim_ID])' />
+      </column>
+      <column caption='Claim ID' datatype='string' name='[Claim_ID]' role='dimension' type='nominal' />
+      <column caption='Days to Resolution' datatype='real' name='[Days_to_Resolution]' role='measure' type='quantitative' />
+      <column caption='Denial Reason' datatype='string' name='[Denial_Reason]' role='dimension' type='nominal' />
+      <column caption='Drug Class' datatype='string' name='[Drug_Class]' role='dimension' type='nominal' />
+      <column caption='Drug Name' datatype='string' name='[Drug_Name]' role='dimension' type='nominal' />
+      <column caption='Patient Out of Pocket Cost' datatype='real' name='[Patient_Out_of_Pocket_Cost]' role='measure' type='quantitative' />
+      <column caption='Rejection Code' datatype='integer' name='[Rejection_Code]' role='dimension' type='ordinal' />
+      <column caption='Resolution Date' datatype='datetime' name='[Resolution_Date]' role='dimension' type='ordinal' />
+      <column caption='Submission Date' datatype='datetime' name='[Submission_Date]' role='dimension' type='ordinal' />
+      <column caption='raw_pharmacy_claims_10k.csv' datatype='table' name='[__tableau_internal_object_id__].[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/qf/_wxf_ht52y72ybx6fl7ct1nh0000gn/T/tableau-temp/#TableauTemp_1km8o4z0nednuz160o3ch1sb1pqt.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/16/2026 12:04:23 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Claim_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Claim_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Claim_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drug_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Drug_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drug_Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drug_Class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Drug_Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drug_Class</remote-alias>
+              <ordinal>2</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rejection_Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rejection_Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rejection_Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Submission_Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Submission_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Submission_Date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Resolution_Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Resolution_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Resolution_Date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>6</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Denial_Reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Denial_Reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Denial_Reason</remote-alias>
+              <ordinal>7</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient_Out_of_Pocket_Cost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Patient_Out_of_Pocket_Cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient_Out_of_Pocket_Cost</remote-alias>
+              <ordinal>8</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3165</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Days_to_Resolution</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Days_to_Resolution]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Days_to_Resolution</remote-alias>
+              <ordinal>9</ordinal>
+              <family>raw_pharmacy_claims_10k.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='raw_pharmacy_claims_10k.csv' id='raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978'>
+            <properties context=''>
+              <relation connection='textscan.176bqy70ypp0hj0zjj68e0uh31xk' name='raw_pharmacy_claims_10k.csv' table='[raw_pharmacy_claims_10k#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Claim_ID' ordinal='0' />
+                  <column datatype='string' name='Drug_Name' ordinal='1' />
+                  <column datatype='string' name='Drug_Class' ordinal='2' />
+                  <column datatype='integer' name='Rejection_Code' ordinal='3' />
+                  <column datatype='datetime' name='Submission_Date' ordinal='4' />
+                  <column datatype='datetime' name='Resolution_Date' ordinal='5' />
+                  <column datatype='string' name='Status' ordinal='6' />
+                  <column datatype='string' name='Denial_Reason' ordinal='7' />
+                  <column datatype='real' name='Patient_Out_of_Pocket_Cost' ordinal='8' />
+                  <column datatype='real' name='Days_to_Resolution' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Class Denial Rates'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='raw_pharmacy_claims_10k' name='federated.1d00y2p1mb7ag815fcwf901dhalf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d00y2p1mb7ag815fcwf901dhalf'>
+            <column caption='Denial Rate %' datatype='real' default-format='p0.00%' name='[Calculation_4290433894957056]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IIF([Status] = &apos;Denied&apos;, [Claim_ID], NULL)) / COUNT([Claim_ID])' />
+            </column>
+            <column caption='Claim ID' datatype='string' name='[Claim_ID]' role='dimension' type='nominal' />
+            <column caption='Drug Class' datatype='string' name='[Drug_Class]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Drug_Class]' derivation='None' name='[none:Drug_Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4290433894957056]' derivation='User' name='[usr:Calculation_4290433894957056:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Class:nk]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Class:nk]</rows>
+        <cols>[federated.1d00y2p1mb7ag815fcwf901dhalf].[usr:Calculation_4290433894957056:qk]</cols>
+      </table>
+      <simple-id uuid='{2213F0AF-50F5-49AB-B6C0-C9C8DCAEFAB6}' />
+    </worksheet>
+    <worksheet name='Drug Denial Rates'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='raw_pharmacy_claims_10k' name='federated.1d00y2p1mb7ag815fcwf901dhalf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d00y2p1mb7ag815fcwf901dhalf'>
+            <column caption='Denial Rate %' datatype='real' default-format='p0.00%' name='[Calculation_4290433894957056]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IIF([Status] = &apos;Denied&apos;, [Claim_ID], NULL)) / COUNT([Claim_ID])' />
+            </column>
+            <column caption='Claim ID' datatype='string' name='[Claim_ID]' role='dimension' type='nominal' />
+            <column caption='Drug Name' datatype='string' name='[Drug_Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Drug_Name]' derivation='None' name='[none:Drug_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4290433894957056]' derivation='User' name='[usr:Calculation_4290433894957056:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1d00y2p1mb7ag815fcwf901dhalf].[usr:Calculation_4290433894957056:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Name:nk]</rows>
+        <cols>[federated.1d00y2p1mb7ag815fcwf901dhalf].[usr:Calculation_4290433894957056:qk]</cols>
+      </table>
+      <simple-id uuid='{6F7962B4-5209-4AF5-9BFA-FF1156F21D9E}' />
+    </worksheet>
+    <worksheet name='KPI Abandoned Claims'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='raw_pharmacy_claims_10k' name='federated.1d00y2p1mb7ag815fcwf901dhalf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d00y2p1mb7ag815fcwf901dhalf'>
+            <column caption='Drug Class' datatype='string' name='[Drug_Class]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978:qk]' pivot='key' type='quantitative' />
+            <column caption='raw_pharmacy_claims_10k.csv' datatype='table' name='[__tableau_internal_object_id__].[raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978]' role='measure' type='quantitative' />
+            <column-instance column='[Drug_Class]' derivation='None' name='[none:Drug_Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Class:nk]'>
+            <groupfilter function='member' level='[none:Drug_Class:nk]' member='&quot;Specialty&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Status:nk]'>
+            <groupfilter function='member' level='[none:Status:nk]' member='&quot;Abandoned&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Status:nk]</column>
+            <column>[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Class:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1d00y2p1mb7ag815fcwf901dhalf].[__tableau_internal_object_id__].[cnt:raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='36'><![CDATA[<[federated.1d00y2p1mb7ag815fcwf901dhalf].[__tableau_internal_object_id__].[cnt:raw_pharmacy_claims_10k.csv_0668CC1450DD46E98518E49B430D3978:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#a7acad' fontsize='10'>ABANDONED SPECIALTY CLAIMS</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BA44F89D-DAC8-4C17-88EE-E9EA69EE7E76}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Prior Authorization Operational Performance &amp; Revenue Leak Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97660' id='9' param='vert' type-v2='layout-flow' w='98614' x='693' y='1170'>
+            <zone h='5702' id='10' type-v2='title' w='98614' x='693' y='1170'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91958' id='7' type-v2='layout-basic' w='98614' x='693' y='6872'>
+              <zone h='45978' id='3' name='KPI Abandoned Claims' show-title='false' w='98614' x='693' y='6872'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45980' id='5' name='Drug Denial Rates' show-title='false' w='49307' x='693' y='52850'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45980' id='6' name='Class Denial Rates' show-title='false' w='49307' x='50000' y='52850'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Prior Authorization Operational Performance &amp; Revenue Leak Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97660' id='13' param='vert' type-v2='layout-flow' w='98614' x='693' y='1170'>
+                <zone h='5702' id='10' type-v2='title' w='98614' x='693' y='1170'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45978' id='3' is-fixed='true' name='KPI Abandoned Claims' show-title='false' w='98614' x='693' y='6872'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45980' id='5' is-fixed='true' name='Drug Denial Rates' show-title='false' w='49307' x='693' y='52850'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45980' id='6' is-fixed='true' name='Class Denial Rates' show-title='false' w='49307' x='50000' y='52850'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{492C6493-DC09-4C48-9E7D-8D3B3BE2C381}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI Abandoned Claims'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Class:nk]</field>
+            <field>[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A5264D39-6FE6-4942-9E6A-2B5820F723F2}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Drug Denial Rates'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BB04E0ED-F533-4C51-9F36-08F070B58C62}' />
+    </window>
+    <window class='worksheet' name='Class Denial Rates'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d00y2p1mb7ag815fcwf901dhalf].[none:Drug_Class:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{91CB3028-4D29-4264-9578-6CACABAE5B44}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Class Denial Rates'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Drug Denial Rates'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Abandoned Claims' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{ECD8DF63-DBF8-4763-8553-EC5A5289E67C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Class Denial Rates' width='192'>
+      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
+      r9SpOqpuLwkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Drug Denial Rates' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='88' name='KPI Abandoned Claims' width='192'>
+      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
+      ZJszCYAQNf8HxjLTpW5C3RwAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
