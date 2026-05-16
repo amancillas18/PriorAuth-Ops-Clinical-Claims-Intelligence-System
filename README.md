@@ -51,8 +51,6 @@ By automating data capture loops and eliminating clinic telephone tag, the opera
 
 ## 📁 Repository Structure
 ```text
-├── data/
-│   └── mock_claims_10k.csv      # Baseline claims dataset (10,000 simulated entries)
 ├── sql/
 │   ├── schema.sql               # Database definition and index optimizations
 │   ├── core_metrics.sql         # Aggregations for drug classes & approval rates
@@ -60,5 +58,7 @@ By automating data capture loops and eliminating clinic telephone tag, the opera
 ├── visuals/
 │   ├── tableau_workbook.twbx    # Interactive analytics dashboard workbook
 │   └── metrics_snapshot.png     # Exported dashboard preview
+├── data/
+│   └── PA_Operational_Executive_Report.xlsx # Professional structured Excel performance audit
 └── presentation/
-    └── Clinical_Claims_Intelligence_System.pptx  # Executive consulting presentation
+    └── PriorAuth-Ops Clinical Claims Intelligence System.pptx  # Executive consulting presentation
